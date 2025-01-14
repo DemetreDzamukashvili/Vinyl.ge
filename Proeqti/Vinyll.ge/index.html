@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinyl Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div>
+                <a data-i18n="Mtavari" href="#">მთავარი</a>
+                <a href="#">ძირითადი ინფორმაცია</a>
+                <a href="#">კონტაქტი</a>
+                <a href="#">ავტორიზაცია</a>
+                <a href="#">რეგისტრაცია</a>
+                <a href="#">ფილიალები</a>
+                <a href="#">ვაკანსიები</a>
+                <button onclick="Enis_Shecvla('eng')">Eng</button>
+                <button onclick="Enis_Shecvla('geo')">Geo</button>
+            </div>
+            <div>
+                <a href="#"><i class="fas fa-search search-icon"></i></a>
+            </div>
+        </nav>
+    </header>
+    </div>
+    <section class="container">
+        <div class="slider-wrapper">
+            <div class="slider">
+                <img id="slide-1" src="vinil2.jpg"  />
+                <img id="slide-2" src="Sekan-at-ZeroZero-1-2.webp"  />
+                <img id="slide-3" src="Gear-Beginners-Vinyl-Buying-Guide-145065177.webp" />
+            </div>
+            <div class="slider-nav">
+                <a href="#slide-1"></a>
+                <a href="#slide-2"></a>
+                <a href="#slide-3"></a>
+            </div>
+        </div>
+    </section>
+    <div class="filters">
+        <div>
+            <label for="category">კატეგორია</label> <br>
+            <select class="select" id="category">
+                <option value="all">ყველა</option>
+                <option value="rock">როკი</option>
+                <option value="pop">პოპ</option>
+                <option value="jazz">ჯაზი</option>
+                <option value="all">ყველა</option>
+                <option value="rock">როკი</option>
+                <option value="pop">პოპ</option>
+                <option value="jazz">ჯაზი</option>
+                <option value="all">ყველა</option>
+                <option value="rock">როკი</option>
+                <option value="pop">პოპ</option>
+                <option value="jazz">ჯაზი</option>
+            </select>
+        </div>
+        <div>
+            <label for="price">მედიის ტიპი</label> <br>
+            <select class="select" id="price">
+                <option value="all">ნებისმიერი მედიის ტიპი</option>
+                <option value="low">Low to High</option>
+                <option value="high">High to Low</option>
+            </select>
+        </div>
+        <div>
+            <label id="label" for="search">ძებნა:</label> <br>
+            <input class="select" id="search" type="text" placeholder="ძებნა">
+        </div>
+    </div>
+    <div class="products">
+        <div class="product">
+            <img src="https://placehold.co/200x200" alt="Album cover of Madonna - The First Album">
+            <p>Madonna - The First Album</p>
+            <p>70 GEL</p>
+        </div>
+        <div class="product">
+            <img alt="Album cover of Elvis Presley - Elvis Presley" src="https://placehold.co/200x200"/>
+            <p>
+             Elvis Presley - Elvis Presley
+            </p>
+            <p>
+             70 GEL
+            </p>
+           </div>
+           <div class="product">
+            <img alt="Album cover of Michael Jackson - Thriller" src="https://placehold.co/200x200"/>
+            <p>
+             Michael Jackson - Thriller
+            </p>
+            <p>
+             70 GEL
+            </p>
+           </div>
+           <div class="product">
+            <img alt="Album cover of The Beatles - Abbey Road" src="https://placehold.co/200x200"/>
+            <p>
+             The Beatles - Abbey Road
+            </p>
+            <p>
+             70 GEL
+            </p>
+           </div>
+           <div class="product">
+            <img alt="Album cover of Queen - Greatest Hits" src="https://placehold.co/200x200"/>
+            <p>
+             Queen - Greatest Hits
+            </p>
+            <p>
+             70 GEL
+            </p>
+           </div>
+           <div class="product">
+            <img alt="Album cover of Pink Floyd - The Dark Side of the Moon" src="https://placehold.co/200x200"/>
+            <p>
+             Pink Floyd - The Dark Side of the Moon
+            </p>
+            <p>
+             70 GEL
+            </p>
+           </div>
+           <div class="product">
+            <img alt="Album cover of Led Zeppelin - IV" src="https://placehold.co/200x200"/>
+            <p>
+             Led Zeppelin - IV
+            </p>
+            <p>
+             70 GEL
+            </p>
+           </div>
+           <div class="product">
+            <img alt="Album cover of Nirvana - Nevermind" src="https://placehold.co/200x200"/>
+            <p>
+             Nirvana - Nevermind
+            </p>
+            <p>
+             70 GEL
+            </p>
+           </div>
+           <div class="product">
+            <img alt="Album cover of The Rolling Stones - Let It Bleed" src="https://placehold.co/200x200"/>
+            <p>
+             The Rolling Stones - Let It Bleed
+            </p>
+            <p>
+             70 GEL
+            </p>
+           </div>
+           <div class="product">
+            <img alt="Album cover of Bob Dylan - Highway 61 Revisited" src="https://placehold.co/200x200"/>
+            <p>
+             Bob Dylan - Highway 61 Revisited
+            </p>
+            <p>
+             70 GEL
+            </p>
+           </div>
+           <div class="product">
+            <img alt="Album cover of David Bowie - The Rise and Fall of Ziggy Stardust and the Spiders from Mars" src="https://placehold.co/200x200"/>
+            <p>
+             David Bowie - The Rise and Fall of Ziggy Stardust and the Spiders from Mars
+            </p>
+            <p>
+             70 GEL
+            </p>
+           </div>
+           <div class="product">
+            <img alt="Album cover of The Clash - London Calling" src="https://placehold.co/200x200"/>
+            <p>
+             The Clash - London Calling
+            </p>
+            <p>
+             70 GEL
+            </p>
+           </div>
+           <div class="product">
+            <img alt="Album cover of The Who - Who's Next" src="https://placehold.co/200x200"/>
+            <p>
+             The Who - Who's Next
+            </p>
+            <p>
+             70 GEL
+            </p>
+           </div>
+           <div class="product">
+            <img alt="Album cover of Jimi Hendrix - Are You Experienced" src="https://placehold.co/200x200"/>
+            <p>
+             Jimi Hendrix - Are You Experienced
+            </p>
+            <p>
+             70 GEL
+            </p>
+           </div>
+           <div class="product">
+            <img alt="Album cover of The Doors - The Doors" src="https://placehold.co/200x200"/>
+            <p>
+             The Doors - The Doors
+            </p>
+            <p>
+             70 GEL
+            </p>
+           </div>
+           <div class="product">
+            <img alt="Album cover of U2 - The Joshua Tree" src="https://placehold.co/200x200"/>
+            <p>
+             U2 - The Joshua Tree
+            </p>
+            <p>
+             70 GEL
+            </p>
+           </div>
+           <div class="product">
+            <img alt="Album cover of Bruce Springsteen - Born to Run" src="https://placehold.co/200x200"/>
+            <p>
+             Bruce Springsteen - Born to Run
+            </p>
+            <p>
+             70 GEL
+            </p>
+           </div>
+           <div class="product">
+            <img alt="Album cover of Fleetwood Mac - Rumours" src="https://placehold.co/200x200"/>
+            <p>
+             Fleetwood Mac - Rumours
+            </p>
+            <p>
+             70 GEL
+            </p>
+           </div>
+           <div class="product">
+            <img alt="Album cover of Eagles - Hotel California" src="https://placehold.co/200x200"/>
+            <p>
+             Eagles - Hotel California
+            </p>
+            <p>
+             70 GEL
+            </p>
+           </div>
+           <div class="product">
+            <img alt="Album cover of AC/DC - Back in Black" src="https://placehold.co/200x200"/>
+            <p>
+             AC/DC - Back in Black
+            </p>
+            <p>
+             70 GEL
+            </p>
+           </div>
+           <div class="product">
+            <img alt="Album cover of Metallica - Master of Puppets" src="https://placehold.co/200x200"/>
+            <p>
+             Metallica - Master of Puppets
+            </p>
+            <p>
+             70 GEL
+            </p>
+           </div>
+           <div class="product">
+            <img alt="Album cover of Guns N' Roses - Appetite for Destruction" src="https://placehold.co/200x200"/>
+            <p>
+             Guns N' Roses - Appetite for Destruction
+            </p>
+            <p>
+             70 GEL
+            </p>
+           </div>
+           <div class="product">
+            <img alt="Album cover of Pearl Jam - Ten" src="https://placehold.co/200x200"/>
+            <p>
+             Pearl Jam - Ten
+            </p>
+            <p>
+             70 GEL
+            </p>
+           </div>
+           <div class="product">
+            <img alt="Album cover of Red Hot Chili Peppers - Blood Sugar Sex Magik" src="https://placehold.co/200x200"/>
+            <p>
+             Red Hot Chili Peppers - Blood Sugar Sex Magik
+            </p>
+            <p>
+             70 GEL
+            </p>
+           </div>
+    </div>
+    <div class="pagination">
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">...</a>
+        <a href="#">21</a>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div>
+                <p class="footer-h1">ჩვენს შესახებ</p>
+                <p>ამ ვებ გვერდის შექმნის მთავარი მიზანია ქართული მსმენლისთვის ხელმისაწვდომი გავხადოთ მსოფლიოს სხვადასხვა ლეიბლის მიერ სხვადსხვა მუსიკალურ ეპოქაში წარმოებული ვინილის ფირფიტები, რომლებიც იმ პერიოდის სულისკვეთებას, ატმოსფეროს და რაც მთავარია ემოციას გადმოსცემენ.</p>
+            </div>
+            <div>
+                <p class="footer-h1">ბმული</p>
+                <p>ბლოგი</p>
+                <p>ვინილის გრეიდინგი</p>
+                <p>როგორ შევიძინო</p>
+                <p>ჩვენს შესახებ</p>
+                <p>კონტაქტი</p>
+            </div>
+            <div>
+                <p class="footer-h1">დაგვიკავშირდით</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="Geo-Eng.js"></script>
+</body>
+</html>
