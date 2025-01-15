@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>რეგისტრაცია</title>
+    <link rel="stylesheet" href="registration.css"> 
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="new-logo-vinyl-ge.png" alt="VINYL.GE Logo">
+        </div>
+        <nav>
+            <div>
+                <a data-i18n="Mtavari" href="index.html">მთავარი</a>
+                <a data-i18n="dziritadi_informacia" href="#">ძირითადი ინფორმაცია</a>
+                <a data-i18n="kontaqti" href="#">კონტაქტი</a>
+                <a data-i18n="avtorizacia" href="#">ავტორიზაცია</a>
+                <a data-i18n="registracia" href="registration.html">რეგისტრაცია</a>
+                <a data-i18n="filialebi" href="#">ფილიალები</a>
+                <a data-i18n="vakansiebi" href="#">ვაკანსიები</a>
+                <button onclick="Enis_Shecvla('eng')">Eng</button>
+                <button onclick="Enis_Shecvla('geo')">Geo</button>
+            </div>
+            <div>
+                <a href="#"><i class="fas fa-search search-icon"></i></a>
+            </div>
+        </nav>
+    </header>
+    <form id="registrationForm">
+        <label for="email">ელ. ფოსტა:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <label for="password">პაროლი:</label>
+        <input type="password" id="password" name="password" required>
+        <p id="passwordStrength"></p>
+        <br>
+        <label for="confirmPassword">დაადასტურეთ პაროლი:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" required>
+        <br>
+        <label for="registrationDate">რეგისტრაციის თარიღი:</label>
+        <input type="date" id="registrationDate" name="registrationDate" required>
+        <br>
+        <label for="username">მომხმარებლის სახელი:</label>
+        <input type="text" id="username" name="username" required>
+        <br>
+        <label for="country">ქვეყანა:</label>
+        <input type="text" id="country" name="country" required>
+        <br>
+        <label for="city">ქალაქი:</label>
+        <input type="text" id="city" name="city" required>
+        <br>
+        <label for="mobile">მობილურის ნომერი:</label>
+        <input type="tel" id="mobile" name="mobile" required>
+        <br>
+        <button type="submit">რეგისტრაცია</button>
+    </form>
+            <script src="registration.js"></script>
+            <script src="Geo-Eng.js"></script>
+            <script src="password.js"></script>

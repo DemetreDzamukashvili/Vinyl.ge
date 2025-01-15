@@ -1,13 +1,17 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const form = document.querySelector('.registration-form form');
-    const emailInput = document.getElementById('email');
-
-    form.addEventListener('submit', function(event) {
-        const email = emailInput.value;
-
-        if (!emailPattern.test(email)) {
-            event.preventDefault(); 
-            alert('Please enter a valid email address. It must contain "@" and a domain with at least two characters after it.');
-        }
-    });
+const form = document.getElementById('registrationForm');
+form.addEventListener('submit', (event) => {
+    event.preventDefault();
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
+    const confirmPassword = document.getElementById('confirmPassword').value;
+    if (!isValidEmail(email)) {
+        alert('ელ. ფოსტა არასწორია.');
+        return;
+    }
+    form.submit();
 });
+function isValidEmail(email) {
+    const atIndex = email.indexOf('@');
+    const dotIndex = email.lastIndexOf('.');
+    return atIndex > 0 && dotIndex > atIndex + 1 && dotIndex < email.length - 2;
+}
