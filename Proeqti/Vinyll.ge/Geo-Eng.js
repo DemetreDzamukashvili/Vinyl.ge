@@ -17,7 +17,6 @@ async function Enis_Shecvla(lang) {
         location.reload();
     }
 }
-
 let lang;
 let arr = document.cookie.split('; ')
 arr.forEach(element => {
